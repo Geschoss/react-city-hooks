@@ -1,17 +1,17 @@
-import React, { useState } from "react";
-import Island from "../common/Island";
+import React, { useState } from 'react';
+import Island from '../common/Island';
 
-const UseStateExl1 = ({ initialCount = 0 }) => {
-  const [count, setCount] = useState(initialCount);
+const UseStateExl2 = () => {
+    const [text, setText] = useState('');
 
-  return (
-    <Island title="Simple useState">
-      Count: {count}
-      <button onClick={() => setCount(initialCount)}>Reset</button>
-      <button onClick={() => setCount(count + 1)}>+</button>
-      <button onClick={() => setCount(prevCount => prevCount - 1)}>-</button>
-    </Island>
-  );
+    const handleChange = (e) => setText(e.target.value);
+
+    return (
+        <Island title="input useState">
+            text: {text}
+            <input onChange={handleChange} />
+        </Island>
+    );
 };
 
-export default UseStateExl1;
+export default UseStateExl2;

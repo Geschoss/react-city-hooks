@@ -1,0 +1,13 @@
+.header {
+    margin: 20px 0;
+    word-wrap: break-word;
+    font-size: 25px;
+    line-height: 24px;
+    font-family: pfhighway, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+}
+
+.container {
+    margin: 0 4px;
+    width: 300px;
+}

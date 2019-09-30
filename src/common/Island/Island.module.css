@@ -1,5 +1,25 @@
 .root {
-    padding: 10px;
-    border: 1px solid #E7E8EA;
+    padding: 0 15px 5px 15px;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
     background-color: #FFFFFF;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.06);
+    margin-bottom: 4px;
+}
+
+.title {
+    padding: 4px 0;
+    word-wrap: break-word;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: haas, pragmatica, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #909090;
+}
+
+.content {
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
 }

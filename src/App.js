@@ -1,26 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Container from './common/Container';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import UseStateExl1 from './useState/UseStateExl1';
+import UseStateExl2 from './useState/UseStateExl2';
+
+const App = () => (
+    <Container>
+        {/* Simple useState */}
+        <UseStateExl1 />
+        {/*input useState*/}
+        <UseStateExl2 />
+    </Container>
+);
 
 export default App;
