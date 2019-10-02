@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Island from '../common/Island';
+import Text from '../common/Text';
 
 const UseStateExl2 = () => {
     const [text, setText] = useState('');
@@ -8,7 +9,7 @@ const UseStateExl2 = () => {
 
     return (
         <Island title="input useState">
-            text: {text}
+            <Text text={text}/>
             <input onChange={handleChange} />
         </Island>
     );
