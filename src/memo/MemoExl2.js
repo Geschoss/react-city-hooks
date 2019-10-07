@@ -20,8 +20,8 @@ const MemoExl2 = () => {
     return (
         <Island title="memo">
             <Header text={text} title={title} />
-            <input onChange={textChange} />
             <input onChange={titleChange} />
+            <input onChange={textChange} />
         </Island>
     );
 };
