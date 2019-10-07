@@ -5,13 +5,23 @@ import Input from '../common/Input';
 
 const UseCallbackExl2 = () => {
     const [text, setText] = useState('');
+    const [prefix, setPrefix] = useState('pref_');
 
-    const handleChange = useCallback((value) => setText(text + value.toUpperCase()), []);
+    const handleChangePrefix = useCallback(
+        (value) => setPrefix(value.toUpperCase()),
+        []
+    );
+
+    const handleChange = useCallback(
+        (value) => setText(prefix + value.toUpperCase()),
+        []
+    );
 
     return (
         <Island title="input useCallback">
             <Text text={text}/>
             <Input onChange={handleChange} />
+            <Input onChange={handleChangePrefix} />
         </Island>
     );
 };
