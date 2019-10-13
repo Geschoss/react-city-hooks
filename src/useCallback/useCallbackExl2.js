@@ -20,7 +20,9 @@ const UseCallbackExl2 = () => {
     return (
         <Island title="input useCallback">
             <Text text={text}/>
+            text:
             <Input onChange={handleChange} />
+            prefix:
             <Input onChange={handleChangePrefix} />
         </Island>
     );
