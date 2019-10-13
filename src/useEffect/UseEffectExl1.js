@@ -26,7 +26,9 @@ const UseEffectExl1 = () => {
             <Text text={index}/>
             <Input onChange={handleChange} />
             <ul>
-                {posts.map(({ id, title }) => <li>{`${id} ${title}`}</li>)}
+                {posts.map(
+                    ({ id, title }) => <li key={id}>{`${id} ${title}`}</li>
+                )}
             </ul>
         </Island>
     );
