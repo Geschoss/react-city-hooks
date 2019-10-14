@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import styles from "./Island.module.css";
 
 const Island = ({ children, title }) => (
@@ -8,4 +8,4 @@ const Island = ({ children, title }) => (
   </div>
 );
 
-export default Island;
+export default memo(Island);
