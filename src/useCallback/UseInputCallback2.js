@@ -3,7 +3,7 @@ import Island from '../common/Island';
 import Text from '../common/Text';
 import Input from '../common/Input';
 
-const UseCallbackExl2 = () => {
+const UseInputCallback2 = () => {
     const [text, setText] = useState('');
     const [prefix, setPrefix] = useState('pref_');
 
@@ -28,4 +28,4 @@ const UseCallbackExl2 = () => {
     );
 };
 
-export default UseCallbackExl2;
+export default UseInputCallback2;

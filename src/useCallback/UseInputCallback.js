@@ -3,17 +3,17 @@ import Island from '../common/Island';
 import Text from '../common/Text';
 import Input from '../common/Input';
 
-const UseCallbackExl1 = () => {
+const UseInputCallback = () => {
     const [text, setText] = useState('');
 
     const handleChange = (value) => setText(value.toUpperCase());
 
     return (
-        <Island title="input useCallback">
+        <Island title="UseInputCallback">
             <Text text={text}/>
             <Input onChange={handleChange} />
         </Island>
     );
 };
 
-export default UseCallbackExl1;
+export default UseInputCallback;
