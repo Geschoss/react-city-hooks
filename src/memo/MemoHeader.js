@@ -10,7 +10,7 @@ const Header = ({ title, text }) => {
 };
 
 
-const MemoExl2 = () => {
+const MemoHeader = () => {
     const [title, setTitle] = useState('');
     const [text, setText] = useState('');
 
@@ -18,7 +18,7 @@ const MemoExl2 = () => {
     const titleChange = (e) => setTitle(e.target.value);
 
     return (
-        <Island title="memo">
+        <Island title="MemoHeader">
             <Header text={text} title={title} />
             <input onChange={titleChange} />
             <input onChange={textChange} />
@@ -26,4 +26,4 @@ const MemoExl2 = () => {
     );
 };
 
-export default MemoExl2;
+export default MemoHeader;

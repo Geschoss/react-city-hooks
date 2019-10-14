@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import Island from '../common/Island';
 import Text from '../common/Text';
 
-const MemoExl1 = () => {
+const UseMemo = () => {
     const [text, setText] = useState('');
 
     const handleChange = (e) => setText(e.target.value);
 
     return (
-        <Island title="memo">
+        <Island title="UseMemo">
             <Text text="first"/>
             <Text text="second"/>
             <Text text={text}/>
@@ -17,4 +17,4 @@ const MemoExl1 = () => {
     );
 };
 
-export default MemoExl1;
+export default UseMemo;
