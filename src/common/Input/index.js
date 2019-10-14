@@ -1,12 +1,12 @@
 import React, { memo } from 'react';
 
-const Input = memo(({ onChange }) => {
+const Input = memo(({ onChange, type = 'text' }) => {
     console.log('render Input');
 
     const handleChange = (e) => onChange(e.target.value);
 
     return (
-        <input onChange={handleChange} />
+        <input type={type} onChange={handleChange} />
     )
 });
 
