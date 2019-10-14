@@ -1,28 +1,47 @@
 import React from 'react';
 import Container from './common/Container';
 
-import UseStateExl1 from './useState/UseStateExl1';
-import UseStateExl2 from './useState/UseStateExl2';
-import UseCallbackExl1 from './useCallback/useCallbackExl1';
-import MemoExl1 from './memo/MemoExl1';
-import MemoExl2 from './memo/MemoExl2';
+import UseButtonState from './useState/UseButtonState';
+import UseInputState from './useState/UseInputState';
+import UseMemo from './memo/UseMemo';
+import MemoHeader from './memo/MemoHeader';
+import UseInputCallback from './useCallback/UseInputCallback';
+import UseInputCallback2 from './useCallback/UseInputCallback2';
+import UseFetchEffect from './useEffect/UseFetchEffect';
+import UseResizeEffect from './useEffect/UseResizeEffect';
+import UseDocumentTitleComponent from './useEffect/UseDocumentTitleComponent';
+import UseDocumentTitleEffect from './useEffect/UseDocumentTitleEffect';
+import UseResizeComponent from './useEffect/UseResizeComponent';
+import UseThemeContext from './useContext/UseThemeContext';
+import UseFormContext from './useContext/UseFormContext';
 
 const App = () => (
     <Container>
-        {/* Simple useState */}
-        {/*<UseStateExl1 />*/}
+        {/*<UseButtonState />*/}
 
-        {/*input useState*/}
-        {/*<UseStateExl2 />*/}
+        {/*<UseInputState />*/}
 
-        {/* memo */}
-        {/*<MemoExl1 />*/}
+        {/*<UseMemo />*/}
 
-        {/* memo 2*/}
-        {/*<MemoExl2 />*/}
+        {/*<MemoHeader />*/}
 
-        {/*input useCallback*/}
-        <UseCallbackExl1 />
+        {/*<UseInputCallback />*/}
+
+        {/*<UseInputCallback2 />*/}
+
+        {/*<UseDocumentTitleComponent/>*/}
+
+        {/*<UseDocumentTitleEffect/>*/}
+
+        {/*<UseFetchEffect/>*/}
+
+        {/*<UseResizeComponent/>*/}
+
+        {/*<UseResizeEffect/>*/}
+
+        {/*<UseThemeContext/>*/}
+
+        <UseFormContext/>
     </Container>
 );
 
