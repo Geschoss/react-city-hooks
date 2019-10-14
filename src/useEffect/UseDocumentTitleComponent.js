@@ -3,7 +3,7 @@ import Island from '../common/Island';
 import Text from '../common/Text';
 import Input from '../common/Input';
 
-class UseEffectExl0 extends React.Component {
+class UseDocumentTitleComponent extends React.Component {
     constructor(props) {
         super(props);
 
@@ -20,7 +20,7 @@ class UseEffectExl0 extends React.Component {
 
     render() {
         return (
-            <Island title="Simple useEffect">
+            <Island title="UseDocumentTitleComponent">
                 <Text text={this.state.title} />
                 <Input onChange={this.handleChange} />
             </Island>
@@ -28,4 +28,4 @@ class UseEffectExl0 extends React.Component {
     }
 }
 
-export default UseEffectExl0;
+export default UseDocumentTitleComponent;

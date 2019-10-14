@@ -6,7 +6,7 @@ import Input from '../common/Input';
 const toJson = (res) => res.json();
 const toArray = (res) => Array.isArray(res) ? res : [res];
 
-const UseEffectExl1 = () => {
+const UseFetchEffect = () => {
     const [index, setIndex] = useState('');
     const [posts, setPosts] = useState([]);
 
@@ -22,7 +22,7 @@ const UseEffectExl1 = () => {
     const handleChange = useCallback(setIndex);
 
     return (
-        <Island title="Simple useEffect">
+        <Island title="UseFetchEffect">
             <Text text={index}/>
             <Input onChange={handleChange} />
             <ul>
@@ -34,4 +34,4 @@ const UseEffectExl1 = () => {
     );
 };
 
-export default UseEffectExl1;
+export default UseFetchEffect;

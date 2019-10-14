@@ -3,13 +3,13 @@ import Island from '../common/Island';
 import Text from '../common/Text';
 import Input from '../common/Input';
 
-const UseEffectExl01 = () => {
-    const [title, setTitle] = useState('React')
+const UseDocumentTitleEffect = () => {
+    const [title, setTitle] = useState('React');
 
     const handleChange = useCallback((value) => setTitle(value), []);
 
     return (
-        <Island title="Simple useEffect">
+        <Island title="UseDocumentTitleEffect">
             <Text text={title} />
             <Input onChange={handleChange} />
         </Island>
@@ -17,4 +17,4 @@ const UseEffectExl01 = () => {
 };
 
 
-export default UseEffectExl01;
+export default UseDocumentTitleEffect;
