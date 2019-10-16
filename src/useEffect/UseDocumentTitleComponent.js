@@ -12,6 +12,14 @@ class UseDocumentTitleComponent extends React.Component {
         };
     }
 
+    componentDidMount() {
+        document.title = this.state.title;
+    }
+
+    componentWillUpdate() {
+        document.title = this.state.title;
+    }
+
     handleChange = (value) => {
         this.setState({
             title: value
