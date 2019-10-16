@@ -1,6 +1,6 @@
 import React, { useContext, useCallback } from 'react';
 
-import { ValueDispatch } from './FormReduce';
+import { ValueDispatch } from './Form';
 import Text from '../../common/Text';
 
 const inputFormWrapper = (Component) => ({ label, type, name }) => {

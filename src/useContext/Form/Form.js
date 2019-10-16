@@ -1,20 +1,21 @@
-import React, { useState, createContext } from 'react';
+import React, { useReducer, createContext } from 'react';
 import Island from '../../common/Island';
 import noop from '../../utils/noop';
+import { merge } from './utils';
 
-export const SimplyValueDispatch = createContext(noop);
+export const ValueDispatch = createContext(noop);
 
 
 const Form = ({ children, title }) => {
-    const [state, setState] = useState({});
+    const [state, setState] = useReducer(merge,{});
 
     console.log(state);
     return (
-        <SimplyValueDispatch.Provider value={setState}>
+        <ValueDispatch.Provider value={setState}>
             <Island title={title}>
                 {children}
             </Island>
-        </SimplyValueDispatch.Provider>
+        </ValueDispatch.Provider>
     )
 };
 
