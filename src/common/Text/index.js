@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import styles from './Text.module.css';
 import log from '../../utils/log';
 
