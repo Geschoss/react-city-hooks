@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, memo } from 'react';
 import Island from '../common/Island';
 import Text from '../common/Text';
+import isTextEqual from './isTextEqual';
 
 const Header = ({ title, text }) => {
     return (<>
@@ -20,7 +21,9 @@ const MemoHeader = () => {
     return (
         <Island title="MemoHeader">
             <Header text={text} title={title} />
+            title
             <input onChange={titleChange} />
+            text
             <input onChange={textChange} />
         </Island>
     );
