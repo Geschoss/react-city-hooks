@@ -6,7 +6,10 @@ import Input from '../common/Input';
 const UseDocumentTitleEffect = () => {
     const [title, setTitle] = useState('React');
 
-    const handleChange = useCallback((value) => setTitle(value), []);
+    const handleChange = useCallback(
+        (value) => setTitle(value),
+        []
+    );
 
     return (
         <Island title="UseDocumentTitleEffect">
