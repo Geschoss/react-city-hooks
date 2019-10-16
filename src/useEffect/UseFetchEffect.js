@@ -12,7 +12,7 @@ const UseFetchEffect = () => {
 
     useEffect(() => {
 
-        fetch(`https://jsonplaceholder.typicode.com/posts/${index}`)
+        fetch(`https://jsonplaceholder.typicode.com/posts`)
             .then(toJson)
             .then(toArray)
             .then(setPosts)
