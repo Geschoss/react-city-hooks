@@ -6,7 +6,7 @@ import Input from '../common/Input';
 const UseInputCallback = () => {
     const [text, setText] = useState('');
 
-    const handleChange = (value) => setText(value.toUpperCase());
+    const handleChange = (value) => setText(value);
 
     return (
         <Island title="UseInputCallback">

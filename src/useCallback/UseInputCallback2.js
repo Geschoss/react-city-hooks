@@ -8,12 +8,12 @@ const UseInputCallback2 = () => {
     const [prefix, setPrefix] = useState('pref_');
 
     const handleChangePrefix = useCallback(
-        (value) => setPrefix(value.toUpperCase()),
+        (value) => setPrefix(value),
         []
     );
 
     const handleChange = useCallback(
-        (value) => setText(prefix + value.toUpperCase()),
+        (value) => setText(prefix + value),
         []
     );
 
