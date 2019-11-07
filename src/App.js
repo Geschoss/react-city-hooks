@@ -21,7 +21,7 @@ const App = () => (
 
         {/*<UseInputState />*/}
 
-        {/*<UseMemo />*/}
+        <UseMemo />
 
         {/*<MemoHeader />*/}
 

@@ -8,4 +8,4 @@ const Text = ({ text }) => {
     return <div className={styles.root}>{text}</div>;
 };
 
-export default Text;
+export default memo(Text);

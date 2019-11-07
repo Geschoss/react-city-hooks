@@ -3,12 +3,12 @@ import Island from '../common/Island';
 import Text from '../common/Text';
 import isTextEqual from './isTextEqual';
 
-const Header = ({ title, text }) => {
+const Header = memo(({ title, text }) => {
     return (<>
         <Text text={title} />
         <Text text={text} />
     </>)
-};
+}, isTextEqual);
 
 
 const MemoHeader = () => {

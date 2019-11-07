@@ -4,7 +4,7 @@ import Text from '../common/Text';
 import useWindowWidth from './useWindowWidth';
 
 const UseResizeEffect = () => {
-    const width = window.innerWidth;
+    const width = useWindowWidth();
 
     return (
         <Island title="UseResizeEffect">

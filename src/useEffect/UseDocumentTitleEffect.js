@@ -11,6 +11,10 @@ const UseDocumentTitleEffect = () => {
         []
     );
 
+    useEffect(() => {
+        document.title = title;
+    });
+
     return (
         <Island title="UseDocumentTitleEffect">
             <Text text={title} />

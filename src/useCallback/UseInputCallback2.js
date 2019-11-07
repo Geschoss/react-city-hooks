@@ -14,7 +14,7 @@ const UseInputCallback2 = () => {
 
     const handleChange = useCallback(
         (value) => setText(prefix + value),
-        []
+        [prefix]
     );
 
     return (

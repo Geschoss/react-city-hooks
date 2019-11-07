@@ -12,12 +12,12 @@ const UseFetchEffect = () => {
 
     useEffect(() => {
 
-        fetch(`https://jsonplaceholder.typicode.com/posts`)
+        fetch(`https://jsonplaceholder.typicode.com/posts/${index}`)
             .then(toJson)
             .then(toArray)
             .then(setPosts)
 
-    }, []);
+    }, [index]);
 
     const handleChange = useCallback(setIndex);
 
